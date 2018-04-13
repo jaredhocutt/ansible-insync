@@ -16,7 +16,7 @@ None
 
 ## Example Playbook
 
-```
+```yaml
 - hosts: localhost
   roles:
       - jaredhocutt.insync
