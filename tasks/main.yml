@@ -1,0 +1,18 @@
+---
+
+- name: Create yum repository
+  yum_repository:
+    name: insync
+    description: Insync - Fedora $releasever
+    baseurl: http://yum.insynchq.com/fedora/$releasever/
+    enabled: yes
+    gpgcheck: yes
+    gpgkey: https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
+    state: present
+  become: yes
+
+- name: Install Insync
+  dnf:
+    name: insync
+    state: present
+  become: yes

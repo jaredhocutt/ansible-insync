@@ -1,0 +1,12 @@
+galaxy_info:
+  author: Jared Hocutt
+  description: Adds the Insync yum repository and installs Insync.
+
+  license: BSD
+
+  min_ansible_version: 2.3
+
+  platforms:
+  - name: Fedora
+    versions:
+    - 27
