@@ -4,8 +4,8 @@
 - name: Create yum repository
   yum_repository:
     name: insync
-    description: Insync - Fedora $releasever
-    baseurl: http://yum.insynchq.com/fedora/$releasever/
+    description: Insync - Fedora {{ insync_releasever }}
+    baseurl: http://yum.insynchq.com/fedora/{{ insync_releasever }}/
     enabled: yes
     gpgcheck: yes
     gpgkey: https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
