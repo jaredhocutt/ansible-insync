@@ -1,10 +1,13 @@
 # Insync
 
-Adds the Insync yum repository and installs Insync.
+This role handles configuring the Insync repository and then install Insync.
 
 ## Requirements
 
-None
+The hosts you are targeting should have the following packages:
+
+- python >= 2.6
+- python-dnf
 
 ## Role Variables
 
@@ -16,8 +19,19 @@ None
 
 ## Example Playbook
 
+
 ```yaml
-- hosts: localhost
+- hosts: servers
   roles:
-      - jaredhocutt.insync
+    - role: jaredhocutt.insync
 ```
+
+## License
+-------
+
+MIT
+
+## Author Information
+------------------
+
+Jared Hocutt (@jaredhocutt)

@@ -1,4 +1,5 @@
 ---
+# tasks file for insync
 
 - name: Create yum repository
   yum_repository:
